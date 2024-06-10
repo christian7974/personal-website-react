@@ -12,7 +12,10 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <div className='bg-red-100 pt-3 h-screen'>
+      <RouterProvider router={router} />
+    </div>);
 }
 
 export default App;
