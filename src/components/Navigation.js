@@ -8,7 +8,7 @@ const variants = {
         scale:1, 
         backgroundColor: 'green',
         padding: '2px 10px',
-        "font-size": "25px",
+        "fontSize": "25px",
         },
     whileHover: {
         scale:1.1, 
@@ -18,7 +18,7 @@ const variants = {
         scale:1, 
         backgroundColor: 'blue',
         padding: '2px 10px',
-        "font-size": "25px",
+        "fontSize": "25px",
         },
 }
 
