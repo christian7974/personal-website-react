@@ -1,6 +1,6 @@
 import Navigation from "../components/Navigation";
 
-import placeHolderPhoto from '../images/placeholder_image.avif';
+import placeHolderPhoto from '../assets/images/placeholder_image1.avif';
 
 export default function HomePage() {
 return (
