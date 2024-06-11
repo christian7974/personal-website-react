@@ -10,12 +10,20 @@ module.exports = {
         'about-photo': '19rem'
       },
       colors: {
-        'periwinkle': '#B5CCF8',
         'night': '#0A0A0A',
+        'dim-gray': '#707070',
         'not-active-link': '#858585', // battleship grey
         'link-hover': '#FFC65C', // xanthous
         'active-link': '#AEEFA9', // celadon
+        'project-scroller': '#F3FFE1', // nyanza
+        'individual-project': '#CBBAA4', // dun
+        'featured-project': '#BCA78A', // khaki
+        'platinum': '#E2E2E2'
       },
+      backgroundImage: theme => ({
+        'gradient-to-45': 
+            'linear-gradient(135deg, #030F26, #0A275C)',
+      })
     },
     fontSize: {
       sm: '0.8rem',

@@ -13,7 +13,6 @@ const variants = {
         },
 
     whileHover: {
-        scale:1.1, 
         backgroundColor: '#FFC65C',
         color: '#0A0A0A',
         },

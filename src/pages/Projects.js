@@ -15,7 +15,7 @@ export default function ProjectPage() {
           <h1 className="reg-header">Projects</h1>
         </div>
         <div className="flex mx-4 space-x-4">
-          <div id="project-container" className="w-1/2 bg-fuchsia-500 h-128 space-y-2 overflow-y-auto">
+          <div id="project-container" className="w-1/2 bg-project-scroller h-128 space-y-2 overflow-y-auto">
             {project_list.map((project, index) => {
               return <IndividualProject 
                 key={index}
