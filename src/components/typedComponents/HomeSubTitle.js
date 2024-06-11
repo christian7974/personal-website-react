@@ -22,6 +22,6 @@ export default function HomeSubTitle() {
 
     }, []);  
     return (
-        <span ref={description} className="text-4xl text-dim-gray"></span>
+        <span ref={description} className="text-5xl text-dim-gray"></span>
     )
 }

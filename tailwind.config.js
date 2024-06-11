@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       borderRadius: {
-        'navigation' : "20px"
+        'inner-link' : "40px"
       },
       height: {
         '128': '30rem',
@@ -15,13 +15,11 @@ module.exports = {
       colors: {
         'night': '#0A0A0A',
         'dim-gray': '#707070',
-        'not-active-link': '#858585', // battleship grey
-        'link-hover': '#FFC65C', // xanthous
-        'active-link': '#AEEFA9', // celadon
         'project-scroller': '#020813', // nyanza
         'individual-project': '#CBBAA4', // dun
         'featured-project': '#858585', // khaki
-        'platinum': '#E2E2E2'
+        'platinum': '#E2E2E2',
+        'link-color': '#fbfbfb'
       },
       backgroundImage: theme => ({
         'gradient-to-45': 
@@ -39,6 +37,7 @@ module.exports = {
       'project-desc': '1.1rem',
       'reg-header': '4.5rem',
       'home-header': '5rem',
+      'link-size': '1.5rem',
     }
   },
   plugins: [],
