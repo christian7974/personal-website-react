@@ -13,7 +13,7 @@ export default function ProjectPage() {
           <h1 className="">Projects</h1>
         </div>
         <div className="flex">
-          <div id="project-container" className="w-1/3 bg-fuchsia-500 h-96 space-y-2 overflow-y-auto">
+          <div id="project-container" className="w-1/2 bg-fuchsia-500 h-96 space-y-2 overflow-y-auto">
             {project_list.map((project, index) => {
               return <IndividualProject 
                 key={index}
@@ -24,10 +24,10 @@ export default function ProjectPage() {
               />
             })}
           </div>
-          <div id="currentProject" className="mx-auto text-center">
-            <img src={currentProject.image} alt="" className="h-48"></img>
+          <div id="currentProject" className="mx-auto text-center items-center bg-green-500 w-1/2">
+            <img src={currentProject.image} alt="" className="h-60 mx-auto"></img>
             <p>{currentProject.title}</p>
-            <p>{currentProject.description}</p>
+            <p>{currentProject.extendedDescription}</p>
           </div>
         </div>
       </>

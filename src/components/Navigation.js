@@ -24,14 +24,7 @@ const variants = {
 
 export default function Navigation() { 
     const location = useLocation().pathname;
-    // const defaultLinkStyle = "text-black px-2 text-2xl";
-    // const activeLinkStyle = "bg-red-100";
-    // const notActiveLinkStyle = "bg-blue-200";
-    // className={`${defaultLinkStyle} ${location === '/projects' ? activeLinkStyle : notActiveLinkStyle}`}
-    // const defaultLinkStyle = "";
-    // const activeLinkStyle = "";
-    // const notActiveLinkStyle = "";
-
+    
     return (
         <div className='flex items-center justify-center'>
             <div className="flex w-fit text-slate-50 rounded-md nav-link">
