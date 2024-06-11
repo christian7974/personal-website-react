@@ -8,7 +8,14 @@ module.exports = {
       height: {
         '128': '30rem',
         'about-photo': '19rem'
-      }
+      },
+      colors: {
+        'periwinkle': '#B5CCF8',
+        'night': '#0A0A0A',
+        'not-active-link': '#858585', // battleship grey
+        'link-hover': '#FFC65C', // xanthous
+        'active-link': '#AEEFA9', // celadon
+      },
     },
     fontSize: {
       sm: '0.8rem',

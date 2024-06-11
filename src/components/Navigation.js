@@ -2,23 +2,28 @@ import { NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import {motion} from 'framer-motion';
 import "./navigation.css";
-
+// https://tegan.io/trends-pill-shaped-navigation/#:~:text=For%20sites%20that%20use%20rounded,is%20happening%20on%20the%20page.
 const variants = {
     notActive: {
         scale:1, 
-        backgroundColor: 'green',
+        backgroundColor: '#858585',
         padding: '2px 10px',
-        "fontSize": "25px",
+        "fontSize": "1.75rem",
+        "color": "white"
         },
+
     whileHover: {
         scale:1.1, 
-        backgroundColor: 'red', },
+        backgroundColor: '#FFC65C',
+        color: '#0A0A0A',
+        },
 
     active: {
         scale:1, 
-        backgroundColor: 'blue',
+        color: '#0A0A0A',
+        backgroundColor: '#AEEFA9',
         padding: '2px 10px',
-        "fontSize": "25px",
+        "fontSize": "1.75rem",
         },
 }
 
@@ -27,7 +32,7 @@ export default function Navigation() {
     
     return (
         <div className='flex items-center justify-center'>
-            <div className="flex w-fit text-slate-50 rounded-md nav-link">
+            <div className="flex w-fit text-slate-50 nav-link">
                 <motion.div 
                     initial={location === "/" ? "active" : "notActive"} 
                     whileHover="whileHover"
