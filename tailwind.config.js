@@ -15,9 +15,9 @@ module.exports = {
         'not-active-link': '#858585', // battleship grey
         'link-hover': '#FFC65C', // xanthous
         'active-link': '#AEEFA9', // celadon
-        'project-scroller': '#F3FFE1', // nyanza
+        'project-scroller': '#020813', // nyanza
         'individual-project': '#CBBAA4', // dun
-        'featured-project': '#BCA78A', // khaki
+        'featured-project': '#858585', // khaki
         'platinum': '#E2E2E2'
       },
       backgroundImage: theme => ({

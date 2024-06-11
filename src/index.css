@@ -11,6 +11,6 @@
 
 @layer components {
     .reg-header {
-        @apply text-home-header font-semibold mb-8;
+        @apply text-home-header font-semibold mb-8 bg-gradient-to-r from-dim-gray from-40% to-platinum bg-clip-text text-transparent;
     }
 }
