@@ -4,7 +4,24 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        '128': '30rem',
+        'about-photo': '19rem'
+      }
+    },
+    fontSize: {
+      sm: '0.8rem',
+      base: '1rem',
+      xl: '1.25rem',
+      '2xl': '1.563rem',
+      '3xl': '1.953rem',
+      '4xl': '2.441rem',
+      '5xl': '3.052rem',
+      'project-desc': '1.1rem',
+      'reg-header': '4.5rem',
+      'home-header': '5rem',
+    }
   },
   plugins: [],
 }

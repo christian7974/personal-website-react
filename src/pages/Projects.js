@@ -1,5 +1,7 @@
 import Navigation from "../components/Navigation";
 import IndividualProject from "../components/IndividualProject";
+import FeaturedProject from "../components/FeaturedProject";
+
 import { project_list } from "../assets/project_list";
 import { useState } from "react";
 
@@ -10,10 +12,10 @@ export default function ProjectPage() {
       <>
         <Navigation />
         <div className="mx-auto w-max">
-          <h1 className="">Projects</h1>
+          <h1 className="reg-header">Projects</h1>
         </div>
-        <div className="flex">
-          <div id="project-container" className="w-1/2 bg-fuchsia-500 h-96 space-y-2 overflow-y-auto">
+        <div className="flex mx-4 space-x-4">
+          <div id="project-container" className="w-1/2 bg-fuchsia-500 h-128 space-y-2 overflow-y-auto">
             {project_list.map((project, index) => {
               return <IndividualProject 
                 key={index}
@@ -24,11 +26,7 @@ export default function ProjectPage() {
               />
             })}
           </div>
-          <div id="currentProject" className="mx-auto text-center items-center bg-green-500 w-1/2">
-            <img src={currentProject.image} alt="" className="h-60 mx-auto"></img>
-            <p>{currentProject.title}</p>
-            <p>{currentProject.extendedDescription}</p>
-          </div>
+          <FeaturedProject image={currentProject.image} title={currentProject.title} extendedDescription={currentProject.extendedDescription}/>
         </div>
       </>
     );
