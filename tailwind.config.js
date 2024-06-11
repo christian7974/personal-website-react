@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      borderRadius: {
+        'navigation' : "20px"
+      },
       height: {
         '128': '30rem',
         'about-photo': '19rem'

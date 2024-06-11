@@ -30,8 +30,8 @@ export default function Navigation() {
     const location = useLocation().pathname;
     
     return (
-        <div className='flex items-center justify-center'>
-            <div className="flex w-fit text-slate-50 nav-link">
+        <div className='flex items-center justify-center '>
+            <div className="flex w-fit text-slate-50 rounded-navigation">
                 <motion.div 
                     initial={location === "/" ? "active" : "notActive"} 
                     whileHover="whileHover"
