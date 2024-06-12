@@ -1,0 +1,8 @@
+.individual-project {
+    background-color: #858585;
+    transition: background-color 0.5s;
+}
+
+.individual-project:hover {
+    background-color: #6b6b6b;
+}

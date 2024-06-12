@@ -1,13 +1,53 @@
+import { useState } from "react";
+import { motion } from 'framer-motion';
+
 import Navigation from "../components/Navigation";
 import IndividualProject from "../components/IndividualProject";
 import FeaturedProject from "../components/FeaturedProject";
 
 import { project_list } from "../assets/project_list";
-import { useState } from "react";
+
+const featuredProjectVariants = {
+  hidden: { 
+    opacity: 0, 
+    y: -20 },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { duration: 0.4 } }
+};
+
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.2
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0 },
+  show: { 
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      ease: "easeInOut"
+    }
+  }
+};
 
 export default function ProjectPage() {
-    var [currentProject, setCurrentProject] = useState(project_list[0]);
-    console.log(currentProject)
+    const [currentProject, setCurrentProject] = useState(project_list[0]);
+    const [animationKey, setAnimationKey] = useState(0);  
+
+    function handleProjectClick(project) {
+      if (project.title !== currentProject.title) {
+        setCurrentProject(project);
+        setAnimationKey(prevKey => prevKey + 1);
+      }
+    }
+
     return (
       <>
         <Navigation />
@@ -15,18 +55,40 @@ export default function ProjectPage() {
           <h1 className="reg-header">Projects</h1>
         </div>
         <div className="flex mx-4 space-x-4">
-          <div id="project-container" className="w-1/2 bg-project-scroller h-128 space-y-2 overflow-y-auto rounded-2xl">
-            {project_list.map((project, index) => {
-              return <IndividualProject 
-                key={index}
-                image={project.image}
-                title={project.title}
-                description={project.description}
-                onClickFunction={() => setCurrentProject(project)}
-              />
-            })}
-          </div>
-          <FeaturedProject image={currentProject.image} title={currentProject.title} extendedDescription={currentProject.extendedDescription}/>
+          <motion.div 
+            id="project-container" 
+            className="w-1/2 bg-project-scroller h-128 space-y-2 overflow-y-auto rounded-2xl"
+            variants={containerVariants}
+            initial="hidden"
+            animate="show"
+            >
+              {project_list.map((project, index) => {
+                return (
+                  <motion.div key={index} variants={itemVariants}>
+                    <IndividualProject 
+                    key={index}
+                    image={project.image}
+                    title={project.title}
+                    description={project.description}
+                    onClickFunction={() => handleProjectClick(project)}
+                   />
+                </motion.div>
+                );
+              })}
+          </motion.div>
+          <motion.div
+            key={animationKey}
+            variants={featuredProjectVariants}
+            initial="hidden"
+            animate="visible"
+            className="w-1/2">
+              <FeaturedProject 
+                image={currentProject.image} 
+                title={currentProject.title} 
+                extendedDescription={currentProject.extendedDescription}
+                link={currentProject.link}
+                />
+          </motion.div>
         </div>
       </>
     );
