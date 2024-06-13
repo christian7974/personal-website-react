@@ -12,7 +12,7 @@ const variants = {
         border: '2px solid transparent'
     },
     whileHover: {
-        border: '2px solid #fbfbfb'
+        border: '2px solid #fbfbfb',
     }
 }
 
@@ -21,7 +21,7 @@ export default function IndividualLink({linkText, path}) {
     return (
         <NavLink to={path}>
             <motion.div 
-                className='w-max text-link-color rounded-2xl px-4 text-link-size font-medium'
+                className='px-4 w-max text-link-color rounded-2xl py-1 text-link-size font-medium tablet:px-2 tablet:text-[3em] phone:px-1 transition duration-300 ease-in-out cursor-pointer hover:bg-night hover:text-link-color hover:shadow-lg'
                 style={{borderRadius: '1rem', opacity: 'revert'}}
                 variants={variants}
                 initial={location === path ? "active" : "notActive"}

@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    screens: {
+        'tablet': {'min': '640px', 'max': '1045px'},
+        'phone': {'min': '300px', 'max': '639px'},
+      },
     extend: {
+      
       borderRadius: {
         'inner-link' : "40px"
       },
