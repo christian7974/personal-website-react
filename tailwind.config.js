@@ -7,6 +7,8 @@ module.exports = {
     screens: {
         'tablet': {'min': '640px', 'max': '1045px'},
         'phone': {'min': '300px', 'max': '639px'},
+        'tabphone': {'min': '300px', 'max': '1045px'},
+        'desktop': {'min': '1046px'},
       },
     extend: {
       
