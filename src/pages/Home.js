@@ -7,9 +7,9 @@ import placeHolderPhoto from '../assets/images/placeholder_image1.avif';
 
 export default function HomePage() {
   return (
-    <>
+    <div className='phone:h-screen bg-gradient-to-45 phone:overflow-clip'>
       <Navigation />
-      <div className="mt-10 grid grid-cols-2 grid-rows-1 tabphone:grid-cols-1 tabphone:grid-rows-1">
+      <div className="mt-10 phone:mt-4 grid grid-cols-2 grid-rows-1 tabphone:grid-cols-1 tabphone:grid-rows-1">
         <div className="tabphone:space-y-0 space-y-32 pt-28 tabphone:pt-3 tabphone:mx-auto desktop:ml-6">
           <motion.h1 
             initial={{ y: -40 }}
@@ -33,6 +33,6 @@ export default function HomePage() {
             ></motion.img>
         </div>
       </div>
-    </>
+    </div>
   );
 }

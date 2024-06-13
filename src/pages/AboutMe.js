@@ -26,13 +26,13 @@ const itemVariants = {
 
 export default function AboutMePage() {
     return (
-      <div className="h-fit">
+      <div className="h-fit bg-gradient-to-45">
         <Navigation />
         <div className="mx-auto w-max">
           <h1 className="reg-header">Who Am I?</h1>
         </div>
         <motion.div 
-          className="grid grid-cols-3 grid-rows-2 gap-4 mx-4"
+          className="grid grid-cols-3 grid-rows-2 gap-4 mx-4 phone:grid-cols-1 phone:grid-rows-6 phone:gap-2"
           variants={containerVariants}
           initial="hidden"
           animate="show"
