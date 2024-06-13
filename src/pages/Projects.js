@@ -49,7 +49,7 @@ export default function ProjectPage() {
     }
 
     return (
-      <>
+      <div className="bg-gradient-to-45">
         <Navigation />
         <div className="mx-auto w-max">
           <h1 className="reg-header">Projects</h1>
@@ -57,7 +57,7 @@ export default function ProjectPage() {
         <div className="flex mx-4 space-x-4">
           <motion.div 
             id="project-container" 
-            className="w-1/2 bg-project-scroller h-128 space-y-2 overflow-y-auto rounded-2xl"
+            className="w-1/2 tabphone:w-full tablet:h-120 tablet:overflow-y-scroll phone:h-80 bg-project-scroller h-128 space-y-2 overflow-y-auto rounded-2xl"
             variants={containerVariants}
             initial="hidden"
             animate="show"
@@ -70,6 +70,7 @@ export default function ProjectPage() {
                     image={project.image}
                     title={project.title}
                     description={project.description}
+                    link={project.link}
                     onClickFunction={() => handleProjectClick(project)}
                    />
                 </motion.div>
@@ -81,7 +82,7 @@ export default function ProjectPage() {
             variants={featuredProjectVariants}
             initial="hidden"
             animate="visible"
-            className="w-1/2">
+            className="w-1/2 tabphone:hidden">
               <FeaturedProject 
                 image={currentProject.image} 
                 title={currentProject.title} 
@@ -90,6 +91,6 @@ export default function ProjectPage() {
                 />
           </motion.div>
         </div>
-      </>
+      </div>
     );
   }

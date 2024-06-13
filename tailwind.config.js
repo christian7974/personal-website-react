@@ -17,6 +17,7 @@ module.exports = {
       },
       height: {
         '128': '30rem',
+        '120': '30rem',
         'about-photo': '19rem'
       },
       colors: {
