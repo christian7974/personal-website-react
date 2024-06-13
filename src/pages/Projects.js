@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 
 import Navigation from "../components/Navigation";
 import IndividualProject from "../components/IndividualProject";
@@ -50,6 +51,13 @@ export default function ProjectPage() {
 
     return (
       <div className="bg-gradient-to-45">
+        <Helmet>
+          <title>Christian Tropeano | Projects</title>
+          <meta name="description"
+            content="The Projects page for my personal website."></meta>
+          <meta name="keywords" content="Christian, Tropeano, christiantropeano"></meta>
+          <meta name="author" content="Christian Tropeano"></meta>
+        </Helmet>
         <Navigation />
         <div className="mx-auto w-max">
           <h1 className="reg-header">Projects</h1>

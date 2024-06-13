@@ -1,4 +1,5 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import {Helmet} from 'react-helmet';
 
 import HomePage from "./pages/Home";
 import AboutMePage from './pages/AboutMe';
@@ -16,6 +17,13 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className='bg-gradient-to-45 pt-3 h-screen text-night'>
+    <Helmet>
+      <title>Christian Tropeano</title>
+      <meta name="description"
+        content="My name is Christian Tropeano, and this is my personal website showcasing work that I have completed."></meta>
+      <meta name="keywords" content="Christian, Tropeano, christiantropeano"></meta>
+      <meta name="author" content="Christian Tropeano"></meta>
+    </Helmet>
       <RouterProvider router={router} />
     </div>);
 }

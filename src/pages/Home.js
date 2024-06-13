@@ -1,4 +1,5 @@
 import {motion} from 'framer-motion';
+import { Helmet } from 'react-helmet';
 
 import Navigation from "../components/Navigation";
 import HomeSubTitle from '../components/typedComponents/HomeSubTitle';
@@ -8,6 +9,13 @@ import placeHolderPhoto from '../assets/images/placeholder_image1.avif';
 export default function HomePage() {
   return (
     <div className='phone:h-screen bg-gradient-to-45 phone:overflow-clip'>
+      <Helmet>
+        <title>Christian Tropeano | Home</title>
+        <meta name="description"
+          content="The Home page for my personal website."></meta>
+        <meta name="keywords" content="Christian, Tropeano, christiantropeano"></meta>
+        <meta name="author" content="Christian Tropeano"></meta>
+      </Helmet>
       <Navigation />
       <div className="mt-10 phone:mt-4 grid grid-cols-2 grid-rows-1 tabphone:grid-cols-1 tabphone:grid-rows-1">
         <div className="tabphone:space-y-0 space-y-32 pt-28 tabphone:pt-3 tabphone:mx-auto desktop:ml-6">
