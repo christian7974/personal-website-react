@@ -1,10 +1,13 @@
-import placeHolderImage from './images/placeholder_image1.avif';
+import convexHull from './images/project_images/convex_hull_example.jpg';
+import personalWebsitePhoto from './images/project_images/personal_website_photo.png';
+import apiPhoto from './images/project_images/api_repo_photo.png';
+import arithPhoto from './images/project_images/arith_photo.png';
 // PUT OTHER PROJECT PHOTO IMPORTS HERE
 
 export const project_list = [
     {
         title: "College Basketball API",
-        image: placeHolderImage,
+        image: apiPhoto,
         description: "API that I designed to retrieve NCAA D1 Men's Basketball Team Stats using Node.js, MongoDB and Express.js.",
         extendedDescription: 
             `When creating a bracket for March Madness, I found that there was no easy way to pull the statistics of every team in the tournament. The tools that I 
@@ -15,7 +18,7 @@ export const project_list = [
     }, 
     {
         title: "This Website",
-        image: placeHolderImage,
+        image: personalWebsitePhoto,
         description: "Website I created to showcase my skills, projects as well as my interests and future goals. I used React.js, Tailwind CSS and Framer Motion.",
         extendedDescription: 
             `I created this website as a way to strengthen my skills in React.js and to showcase my projects. I wanted to create a website that was visually 
@@ -27,7 +30,7 @@ export const project_list = [
     }, 
     {
         title: "Convex Hull",
-        image: placeHolderImage,
+        image: convexHull,
         description: "Program my group wrote in C++ for our Data Structures and Abstractions class that finds the convex hull of a set of points using the Graham Scan algorithm.",
         extendedDescription: 
             `In my Data Structures and Abstractions course, we had to choose a topic to write a program on in a group of 3 students. My peers and I chose to program
@@ -39,7 +42,7 @@ export const project_list = [
     }, 
     {
         title: "Arith (Lossy Image Compression)",
-        image: placeHolderImage,
+        image: arithPhoto,
         description: "An implementation of lossy image compression using the Discrete Cosine Transformation Formula in Rust.",
         extendedDescription: 
         `In my Computer Organization course, we were tasked with performing lossy image compression on a .ppm file using the Discrete Cosine Transformation formula in Rust.

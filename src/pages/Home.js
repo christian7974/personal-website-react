@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import Navigation from "../components/Navigation";
 import HomeSubTitle from '../components/typedComponents/HomeSubTitle';
 
-import placeHolderPhoto from '../assets/images/placeholder_image1.avif';
+import coverPhoto from '../assets/images/home_page_photo.jpeg'
 
 export default function HomePage() {
   return (
@@ -32,8 +32,8 @@ export default function HomePage() {
         </div>
         <div className="mx-auto tabphone:mt-10">
           <motion.img 
-            src={placeHolderPhoto} 
-            alt="" 
+            src={coverPhoto} 
+            alt="Photo of me with my arms crossed." 
             className="w-auto h-auto tabphone:w-[90%] tabphone:h-[90%] rounded-3xl shadow-2xl mx-auto"
             initial={{opacity: 0}}
             animate={{opacity: 1}}
