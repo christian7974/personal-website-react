@@ -17,7 +17,7 @@ export default function HomePage() {
         <meta name="author" content="Christian Tropeano"></meta>
       </Helmet>
       <Navigation />
-      <div className="pl-5 mt-10 phone:mt-4 grid grid-cols-2 grid-rows-1 tabphone:grid-cols-1 tabphone:grid-rows-1">
+      <div className="pl-5 mt-20 phone:mt-4 grid grid-cols-2 grid-rows-1 tabphone:grid-cols-1 tabphone:grid-rows-1">
         <div className="tabphone:space-y-0 space-y-32 pt-28 tabphone:pt-3 tabphone:mx-auto desktop:ml-6">
           <motion.h1 
             initial={{ y: -40 }}
