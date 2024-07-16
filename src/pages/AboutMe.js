@@ -29,7 +29,7 @@ export default function AboutMePage() {
     return (
       <div className="h-fit bg-gradient-to-45 desktop:overflow-hidden">
         <Helmet>
-          <title>Christian Tro peano | About Me</title>
+          <title>Christian Tropeano | About</title>
           <meta name="description"
             content="The About me page for my personal website."></meta>
           <meta name="keywords" content="Christian, Tropeano, christiantropeano"></meta>

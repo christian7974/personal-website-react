@@ -8,10 +8,10 @@ module.exports = {
         'tablet': {'min': '640px', 'max': '1045px'},
         'phone': {'min': '300px', 'max': '639px'},
         'tabphone': {'min': '300px', 'max': '1045px'},
-        'desktop': {'min': '1046px'},
+        'desktop': {'min': '1046px', 'max': '1919px'},
+        'television': '1280px',
       },
     extend: {
-      
       borderRadius: {
         'inner-link' : "40px"
       },
