@@ -12,6 +12,10 @@ module.exports = {
         'television': '1280px',
       },
     extend: {
+      screens: {
+        'tall': {'raw': '(min-height: 1079px)'},
+      },
+
       borderRadius: {
         'inner-link' : "40px"
       },

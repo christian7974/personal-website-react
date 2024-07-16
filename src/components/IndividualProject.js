@@ -1,7 +1,7 @@
 import "./IndividualProject.css";
 
 export default function IndividualProject({image, title, description, link, onClickFunction}) { 
-    const textOnLink = link !== "NA" ? "Link to Project" : "Link to Project (Current Assignment)";
+    const textOnLink = link !== "NA" ? "Link to Project" : "Link to Project Unavailable (Current Assignment)";
     return (
         <div className="flex w-in pt-3 pl-3 pb-3 hover:cursor-pointer individual-project" onClick={onClickFunction}>
             <img src={image} alt="" className="h-32 rounded-lg"></img>
