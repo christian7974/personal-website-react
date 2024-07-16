@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet';
 import Navigation from "../components/Navigation";
 import IndividualProject from "../components/IndividualProject";
 import FeaturedProject from "../components/FeaturedProject";
+import PageTitle from "../components/PageTitle";
 
 import { project_list } from "../assets/project_list";
 
@@ -59,9 +60,7 @@ export default function ProjectPage() {
           <meta name="author" content="Christian Tropeano"></meta>
         </Helmet>
         <Navigation />
-        <div className="mx-auto w-max">
-          <h1 className="reg-header">Projects</h1>
-        </div>
+        <PageTitle titleContent="Projects" />
         <div className="flex mx-4 space-x-4">
           <motion.div 
             id="project-container" 

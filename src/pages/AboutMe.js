@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import { Helmet } from 'react-helmet';
 
 import Navigation from "../components/Navigation";
-import AboutMeSection from "../components/AboutMeSection";
+import AboutMeSection from "../components/AboutMeBox";
+import PageTitle from "../components/PageTitle";
 import { about_me_list } from "../assets/about_me_list";
 
 const containerVariants = {
@@ -36,11 +37,9 @@ export default function AboutMePage() {
           <meta name="author" content="Christian Tropeano"></meta>
         </Helmet>
         <Navigation />
-        <div className="mx-auto w-max">
-          <h1 className="reg-header">Who Am I?</h1>
-        </div>
+        <PageTitle titleContent="Who Am I?" />
         <motion.div 
-          className="grid grid-cols-3 grid-rows-2 gap-3 mx-4 phone:grid-cols-1 phone:grid-rows-6 phone:gap-2"
+          className="grid grid-cols-3 grid-rows-2 gap-x-3 gap-y-4  mx-4 phone:grid-cols-1 phone:grid-rows-6 phone:gap-2"
           variants={containerVariants}
           initial="hidden"
           animate="show"
