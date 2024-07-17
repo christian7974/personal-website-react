@@ -4,6 +4,7 @@ import {Helmet} from 'react-helmet';
 import HomePage from "./pages/Home";
 import AboutMePage from './pages/AboutMe';
 import ProjectPage from './pages/Projects';
+import SkillsPage from './pages/Skills';
 import NotFound from './pages/NotFound';
 import './App.css';
 
@@ -11,6 +12,7 @@ const router = createBrowserRouter([
   {path: '/', element: <HomePage />},
   {path: '/about', element: <AboutMePage />},
   {path: '/projects', element: <ProjectPage />},
+  {path: '/skills', element: <SkillsPage />},
   {path: '*', element: <NotFound />}
 ]);
 
