@@ -2,6 +2,7 @@
 
 ## Christian Tropeano
 
+This is a personal website that I made to showcase my skills and other projects that I have worked on. This was also an opportunity to strengthen my skills in React, as that is a technology that I want to get comfortable with going forward.
 
 ## Technologies Used
 - React.js
