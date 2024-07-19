@@ -18,7 +18,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className='bg-gradient-to-45 h-screen text-night tall:pt-16 pt-3'>
+    <div className='bg-gradient-to-45 h-screen text-night tall:pt-16 pt-3 phone:w-full'>
     <Helmet>
       <title>Christian Tropeano</title>
       <meta name="description"

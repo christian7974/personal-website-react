@@ -1,8 +1,8 @@
 import skills from "../assets/skills_array";
 
 export default function ResponsiveSkillsList() {
-    const titleStyles = "text-2xl text-[white] font-bold";
-    const listStyle = "text-[white] text-xl";
+    const titleStyles = "text-2xl text-[#0A0A0A] font-bold";
+    const listStyle = "text-[#0A0A0A] text-xl";
     return (
     <div className="hidden w-[75%] phone:flex phone:flex-col mx-auto text-center gap-y-2">
         <div className="bg-green-500 rounded-md">
