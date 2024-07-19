@@ -93,7 +93,7 @@ const SkillRadarChart = () => {
     };
 
     return (
-    <div style={{ width: '70%', height: '70%', margin: '0 auto' }}>
+    <div style={{ width: '70%', height: '70%', margin: '0 auto' }} className="phone:hidden">
         <Radar data={data} options={options} />
     </div>
     );
