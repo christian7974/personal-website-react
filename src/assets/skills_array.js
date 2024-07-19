@@ -1,3 +1,5 @@
+// 1 = Novice, 2 = Intermediate, 3 = Advanced
+
 const skills = [
     { name: 'Javascript', value: 3 },
     { name: 'React', value: 2 },
@@ -8,7 +10,9 @@ const skills = [
     { name: 'SQL', value: 1 },
     { name: 'Tailwind', value: 2 },
     { name: 'Rust', value: 1 },
-    { name: 'Typescript', value: 2 }
+    { name: 'Typescript', value: 2 },
+    { name: 'SQL', value: 1 },
+    { name: 'NoSQL', value: 2}
 ];
 
 export default skills;

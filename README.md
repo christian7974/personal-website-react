@@ -6,7 +6,7 @@ This is a personal website that I made to showcase my skills and other projects 
 
 ## Technologies Used
 - React.js
-- Tailwind CSS
+- Tailwind
 - [Typed.js](https://mattboldt.com/demos/typed-js/)
 - Framer Motion
 - React Helmet (SEO)
@@ -28,3 +28,4 @@ One design challenge that I had was how to display my skills on the skill page. 
 - Playing music while scrolling website (connect to my Spotify playlist)
 - Light/Dark Mode
 - Clean up Tailwind/JS code
+- Make image on About Me Page scale to be larger when hovered over
