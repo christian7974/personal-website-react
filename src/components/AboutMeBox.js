@@ -6,7 +6,11 @@ export default function AboutMeSection({title, description, image, background}) 
                     className="leading-relaxed tablet:text-[20px] tall:text-[20px] text-[18px]" 
                     dangerouslySetInnerHTML={{ __html: description }}>
                 </p>
-                {image && <img src={image} className="h-about-photo mx-auto my-auto" alt="View from the top of the Prudential Tower in Boston, MA"></img>}
+                {image && 
+                    (<>
+                        <img src={image} className="h-about-photo mx-auto my-auto rounded-3xl" alt="View from the top of the Prudential Tower in Boston, MA"></img>
+                        <p className="text-[18px] text-platinum">Picture from the top of the Prudential Tower in Boston that I took.</p>
+                    </>)}
         </div>
     )
 }
