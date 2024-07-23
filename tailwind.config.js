@@ -14,6 +14,7 @@ module.exports = {
     extend: {
       screens: {
         'tall': {'raw': '(min-height: 1079px)'},
+        'short': {'raw': '(max-height: 700px)'},
       },
 
       borderRadius: {

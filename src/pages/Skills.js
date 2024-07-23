@@ -10,8 +10,9 @@ export default function SkillsPage() {
             <PageTitle titleContent="Skills" />
             {/* Will only be shown on devices larger than phones */}
             <SkillRadarChart /> 
-            
-            <ResponsiveSkillsList />
+            <div className="short:bg-gradient-to-45">
+                <ResponsiveSkillsList />
+            </div>
         </>
     )
 }
