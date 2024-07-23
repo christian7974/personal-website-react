@@ -7,6 +7,7 @@ import ProjectPage from './pages/Projects';
 import SkillsPage from './pages/Skills';
 import NotFound from './pages/NotFound';
 import './App.css';
+import Floating from './components/Floating';
 
 const router = createBrowserRouter([
   {path: '/', element: <HomePage />},
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className='bg-gradient-to-45 h-screen text-night tall:pt-16 pt-3 phone:w-full'>
+    <Floating />
     <Helmet>
       <title>Christian Tropeano</title>
       <meta name="description"
