@@ -8,7 +8,7 @@ import coverPhoto from '../assets/images/home_page_photo.jpeg'
 
 export default function HomePage() {
   return (
-    <div className='phone:h-screen bg-gradient-to-45 phone:overflow-clip'>
+    <div className='phone:h-screen phone:overflow-clip'>
       <Helmet>
         <title>Christian Tropeano | Home</title>
         <meta name="description"
