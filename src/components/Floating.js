@@ -1,15 +1,12 @@
 import { useState } from "react";
-
 import { motion } from "framer-motion";
+
+import { importantLinks } from "../assets/important_links_list";
 
 const staggerAmount = 0.2;
 
 // Links that are in the floating menu
-const importantLinks = [
-    {linkTitle: "Github", link: "https://github.com/christian7974"},
-    {linkTitle: "LinkedIn", link: "https://www.linkedin.com/in/christiantropeano/"},
-    {linkTitle: "Resume", link: "https://docs.google.com/document/d/1QccD-QtopnuSShMNlUV7joSSHz1U6WgbwAS_eqQvGGQ/edit?usp=sharing"}
-]
+
 
 const parentVariants = {
     initial: {
