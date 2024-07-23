@@ -1,3 +1,5 @@
+import ProjectLink from "./ProjectLink";
+
 import "./IndividualProject.css";
 
 export default function IndividualProject({image, title, description, link, onClickFunction}) { 
@@ -10,11 +12,7 @@ export default function IndividualProject({image, title, description, link, onCl
                 <p className="text-project-desc tablet:text-[1.5rem] leading-relaxed pr-1">
                     {description} 
                     {link !== "NA" ? (
-                        <a 
-                        href={link}
-                        target="_blank" 
-                        rel="noreferrer" 
-                        className="text-blue-600 mb-2 block desktop:hidden w-fit">{textOnLink}</a>
+                        <ProjectLink link={link} textOnLink={textOnLink} />
                         ) : (
                         <span 
                             className="text-blue-600 mb-2 block cursor-not-allowed desktop:hidden">{textOnLink}</span>

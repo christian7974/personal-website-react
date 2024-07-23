@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 import { importantLinks } from "../assets/important_links_list";
 
 const staggerAmount = 0.2;
-
+const menuHeight = '40px';
 // Links that are in the floating menu
 
 
 const parentVariants = {
     initial: {
-      height: '30px',
+      height: menuHeight,
       
     },
     hover: {
@@ -22,7 +22,7 @@ const parentVariants = {
       },
     },
     exit: {
-    height: '30px',
+    height: menuHeight,
     transition: {
       // Ensure the parent transition duration accommodates the staggered fade-out
       duration: 0.5 + (3 * staggerAmount), // Adjust based on the number of items and staggerAmount
@@ -38,7 +38,7 @@ const parentVariants = {
     exit: { opacity: 0 },
   };
 
-const listItemsStyle = "text-center text-lg text-gray-700 py-1 hover:text-gray-900 hover:font-bold";
+const listItemsStyle = "text-center text-xl text-gray-700 py-1 hover:text-gray-900 hover:font-bold";
 
 // Will be hidden on smaller devices
 export default function Floating() {
@@ -51,9 +51,9 @@ export default function Floating() {
         animate={hoverState}
         onMouseEnter={() => setHoverState("hover")}
         onMouseLeave={() => setHoverState("exit")}
-        className="bg-individual-project absolute left-7 top-7 rounded-sm px-2 text-center tabphone:invisible"
+        className="bg-individual-project absolute left-7 top-7 rounded-md px-2 text-center tabphone:invisible"
     >
-        <h2 className="text-xl">Important Links</h2>
+        <h2 className="text-2xl">Important Links</h2>
         <motion.ul>
             {importantLinks.map((item, index) => (
                 <motion.li key={index} variants={childVariants} className="mb-2">
