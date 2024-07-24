@@ -11,7 +11,7 @@ import downSVG from '../assets/images/down-arrow-svgrepo-com.svg';
 export default function HomePage() {
 
   const listItemsStyle = "text-center text-xl tablet:text-2xl text-gray-700 py-1";
-
+  console.log(process.env.REACT_APP_TITLE);
   return (
     <>
     <div className='phone:h-screen bg-gradient-to-45 phone:overflow-auto'>
