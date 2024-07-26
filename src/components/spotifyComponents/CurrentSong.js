@@ -1,64 +1,22 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const CurrentSong = () => {
-  const [accessToken, setAccessToken] = useState('');
+export default function CurrentSong() {
   const [currentTrack, setCurrentTrack] = useState(null);
 
   useEffect(() => {
-    const getAccessToken = async () => {
-      const clientId = process.env.REACT_APP_CLIENT_ID;
-      const clientSecret = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET;
-      const refreshToken = process.env.REACT_APP_SPOTIFY_REFRESH_TOKEN;
-      console.log(clientId);
-      console.log(clientSecret);
-      console.log(refreshToken);
-      try {
-        const response = await axios.post('https://accounts.spotify.com/api/token', null, {
-          params: {
-            grant_type: 'refresh_token',
-            refresh_token: refreshToken,
-          },
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            Authorization: `Basic ${btoa(`${clientId}:${clientSecret}`)}`,
-          },
-        });
-
-        setAccessToken(response.data.access_token);
-      } catch (error) {
-        console.error('Error getting access token:', error);
-      }
-    };
-
-    getAccessToken();
-  }, []);
-
-  useEffect(() => {
     const fetchCurrentTrack = async () => {
-      if (!accessToken) return;
-
       try {
-        const response = await axios.get('https://api.spotify.com/v1/me/player/currently-playing', {
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-          },
-        });
+        // Update this URL to point to your deployed API
+        const response = await axios.get('https://spotify-backend-pg71.onrender.com/api/current-track');
 
         if (response.status === 200 && response.data) {
-          const track = response.data.item;
-          console.log(track);
-          setCurrentTrack({
-            name: track.name,
-            artist: track.artists.map((artist) => artist.name).join(', '),
-            album: track.album.name,
-            imageUrl: track.album.images[0].url,
-          });
+          setCurrentTrack(response.data);
         } else {
           setCurrentTrack(null);
         }
       } catch (error) {
-        console.error('Error fetching current track:', error);
+        console.error('Error fetching current track:', error.message);
       }
     };
 
@@ -67,7 +25,7 @@ const CurrentSong = () => {
     const interval = setInterval(fetchCurrentTrack, 5000);
 
     return () => clearInterval(interval);
-  }, [accessToken]);
+  }, []);
 
   return (
     <div className='text-center items-center'>
@@ -87,4 +45,3 @@ const CurrentSong = () => {
   );
 };
 
-export default CurrentSong;
