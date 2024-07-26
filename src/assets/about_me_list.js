@@ -1,12 +1,12 @@
 // Second item in array is the top middle of grid, image goes there
-
+import aboutMeImage from './images/about_photo.jpeg';
 export const about_me_list = [
     {
         title: "Education",
         description: "I graduated from the University of Rhode Island with a BS in Computer Science, earning summa cum laude honors (3.77 cumulative GPA, 3.81 GPA within my major). I plan to attend Northeastern University for my Master's in Computer Science in the Spring of 2025. I have also considered pursuing a PhD and becoming a professor, which remains a long-term goal."
     },
     {
-        title: "Currently Listening To",
+        image: aboutMeImage
     },
     {
         title: "Interests",

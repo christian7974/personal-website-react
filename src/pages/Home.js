@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet';
 
 import Navigation from "../components/Navigation";
 import HomeSubTitle from '../components/typedComponents/HomeSubTitle';
-import CurrentSong from '../components/spotifyComponents/CurrentSong';
 import { importantLinks } from '../assets/important_links_list';
 
 import coverPhoto from '../assets/images/home_page_photo.jpeg';
@@ -12,6 +11,7 @@ import downSVG from '../assets/images/down-arrow-svgrepo-com.svg';
 export default function HomePage() {
 
   const listItemsStyle = "text-center text-xl tablet:text-2xl text-gray-700 py-1";
+
   return (
     <>
     <div className='phone:h-screen bg-gradient-to-45 phone:overflow-auto'>
@@ -46,7 +46,6 @@ export default function HomePage() {
             transition={{duration: 1}}  
             ></motion.img>
         </div>
-        
       </div>
       <img src={downSVG} className='hidden tabphone:block animate-bounce w-10 h-auto mx-auto' alt="SVG of down arrow"></img>
     </div>

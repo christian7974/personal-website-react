@@ -44,19 +44,22 @@ export default function AboutMePage() {
           initial="hidden"
           animate="show"
           >
-             {about_me_list.map((item, index) => {
-        return (
-          <motion.div key={index} variants={itemVariants}>
-              <AboutMeSection
-                key={index}
-                title={item.title}
-                description={item.description}
-                image={item.image}
-              />
-            
-          </motion.div>
-        );
-      })}
+            {about_me_list.map((item, index) => {
+              const isPhoto = index === 1;
+              const background = !isPhoto ? "bg-featured-project" : "";
+
+              return (
+                <motion.div key={index} variants={itemVariants}>
+                  <AboutMeSection
+                    key={index}
+                    title={item.title}
+                    description={item.description}
+                    image={item.image}
+                    background={background}
+                  />
+                  </motion.div>
+              );
+            })}
         </motion.div>
       </div>
     );
