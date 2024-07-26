@@ -22,7 +22,7 @@ export default function CurrentSong() {
 
     fetchCurrentTrack();
 
-    const interval = setInterval(fetchCurrentTrack, 5000);
+    const interval = setInterval(fetchCurrentTrack, 20000);
 
     return () => clearInterval(interval);
   }, []);
