@@ -1,4 +1,4 @@
-// Second item in array is the top middle of grid, image goes there
+// Second item in array is the top middle of grid, CurrentSong goes there
 
 export const about_me_list = [
     {
@@ -6,11 +6,11 @@ export const about_me_list = [
         description: "I graduated from the University of Rhode Island with a BS in Computer Science, earning summa cum laude honors (3.77 cumulative GPA, 3.81 GPA within my major). I plan to attend Northeastern University for my Master's in Computer Science in the Spring of 2025. I have also considered pursuing a PhD and becoming a professor, which remains a long-term goal."
     },
     {
-        title: "Currently Listening To",
+        title: "Currently Listening To:",
     },
     {
         title: "Interests",
-        description: "When I am not programming or in school, I enjoy going to the gym and playing basketball. I'm a big sports fan, primarily following Boston teams. Baseball is my favorite sport to watch because of its leisurely pace and the unique atmosphere at the games. I also love to read and am currently reading <em>Atomic Habits</em> by James Clear."
+        description: "When I am not programming or in school, I enjoy going to the gym and playing disc golf. I'm a big sports fan, primarily following Boston teams. Baseball is my favorite sport to watch because of its leisurely pace and the unique atmosphere at the games. I also love to read and am currently reading <em>Atomic Habits</em> by James Clear."
     },
     {
         title: "Personal Background",

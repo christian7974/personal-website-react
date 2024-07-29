@@ -1,3 +1,5 @@
+// File with important links (socials, resume)
+
 export const importantLinks = [
     {linkTitle: "Github", link: "https://github.com/christian7974"},
     {linkTitle: "LinkedIn", link: "https://www.linkedin.com/in/christiantropeano/"},

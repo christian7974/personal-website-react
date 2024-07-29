@@ -17,7 +17,7 @@ const variants = {
 }
 
 export default function IndividualLink({linkText, path}) {
-    const location = useLocation().pathname;
+    const location = useLocation().pathname; // Get the current path of the page
     return (
         <NavLink to={path}>
             <motion.div 

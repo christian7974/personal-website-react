@@ -7,7 +7,7 @@ export default function CurrentSong() {
   useEffect(() => {
     const fetchCurrentTrack = async () => {
       try {
-        // Update this URL to point to your deployed API
+        // URL to fetch the current track and get the refresh token
         const response = await axios.get('https://spotify-backend-pg71.onrender.com/api/current-track');
 
         if (response.status === 200 && response.data) {
@@ -21,7 +21,7 @@ export default function CurrentSong() {
     };
 
     fetchCurrentTrack();
-
+    
     const interval = setInterval(fetchCurrentTrack, 20000);
 
     return () => clearInterval(interval);
@@ -31,7 +31,7 @@ export default function CurrentSong() {
     <div className='text-center items-center'>
       {currentTrack ? (
         <div className='border-slate-50'>
-          <img src={currentTrack.imageUrl} alt="Album cover" className='w-[25%] h-auto' style={{margin: '0 auto'}} />
+          <img src={currentTrack.imageUrl} alt="Album cover" className='w-[30%] phone:w-[200px] h-auto' style={{margin: '0 auto'}} />
           <div className='tablet:text-[20px] tall:text-[20px] text-[18px]'>
             <h2>{currentTrack.name}</h2>
             <p>Artist: {currentTrack.artist}</p>
@@ -39,7 +39,7 @@ export default function CurrentSong() {
           </div>
         </div>
       ) : (
-        <p>No track currently playing.</p>
+        <p className='text-4xl'>No track currently playing.</p>
       )}
     </div>
   );

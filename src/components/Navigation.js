@@ -1,5 +1,4 @@
 import IndividualLink from './IndividualLink';
-// https://tegan.io/trends-pill-shaped-navigation/#:~:text=For%20sites%20that%20use%20rounded,is%20happening%20on%20the%20page.
 
 export default function Navigation() {     
     return (

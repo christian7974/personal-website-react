@@ -2,7 +2,6 @@ import convexHull from './images/project_images/convex_hull_example.jpg';
 import personalWebsitePhoto from './images/project_images/personal_website_photo.png';
 import apiPhoto from './images/project_images/api_repo_photo.png';
 import arithPhoto from './images/project_images/arith_photo.png';
-// PUT OTHER PROJECT PHOTO IMPORTS HERE
 
 export const project_list = [
     {

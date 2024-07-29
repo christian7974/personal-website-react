@@ -1,5 +1,7 @@
 import skills from "../assets/skills_array";
 
+// Component that will be shown on smaller devices showing my skills in a concise, color-coded list
+
 export default function ResponsiveSkillsList() {
     const titleStyles = "text-2xl text-[#0A0A0A] font-bold";
     const listStyle = "text-[#0A0A0A] text-xl";

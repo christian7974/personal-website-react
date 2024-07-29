@@ -40,9 +40,11 @@ const itemVariants = {
 };
 
 export default function ProjectPage() {
+    // State variables to manage the current project that the user clicked on
     const [currentProject, setCurrentProject] = useState(project_list[0]);
     const [animationKey, setAnimationKey] = useState(0);  
 
+    // Ensures that the user clicked on a different project from the previous one
     function handleProjectClick(project) {
       if (project.title !== currentProject.title) {
         setCurrentProject(project);

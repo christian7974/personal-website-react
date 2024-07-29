@@ -5,8 +5,6 @@ import { importantLinks } from "../assets/important_links_list";
 
 const staggerAmount = 0.2;
 const menuHeight = '40px';
-// Links that are in the floating menu
-
 
 const parentVariants = {
     initial: {
@@ -53,7 +51,7 @@ export default function Floating() {
         onMouseLeave={() => setHoverState("exit")}
         className="bg-individual-project absolute left-7 top-7 rounded-md px-2 text-center tabphone:invisible"
     >
-        <h2 className="text-2xl">Important Links</h2>
+        <h2 className="text-2xl">Career Links</h2>
         <motion.ul>
             {importantLinks.map((item, index) => (
                 <motion.li key={index} variants={childVariants} className="mb-2">

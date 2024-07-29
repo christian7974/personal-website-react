@@ -54,7 +54,6 @@ export default function AboutMePage() {
                     key={index}
                     title={item.title}
                     description={item.description}
-                    image={item.image}
                     background={background}
                   />
                   </motion.div>

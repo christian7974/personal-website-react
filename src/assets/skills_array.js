@@ -11,8 +11,8 @@ const skills = [
     { name: 'Tailwind', value: 2 },
     { name: 'Rust', value: 1 },
     { name: 'Typescript', value: 2 },
-    { name: 'SQL', value: 1 },
-    { name: 'NoSQL', value: 2}
+    { name: 'NoSQL', value: 2},
+    { name: 'Git/Github', value: 3}
 ];
 
 export default skills;
