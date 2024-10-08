@@ -7,13 +7,13 @@ export const project_list = [
     {
         title: "College Basketball API",
         image: apiPhoto,
-        description: "API that I designed to retrieve NCAA D1 Men's Basketball Team Stats using Node.js, MongoDB and Express.js.",
+        description: "API that I designed to retrieve NCAA D1 Men's Basketball Team Stats using Typescript, Node.js, MongoDB and Express.js.",
         extendedDescription: 
             `When creating a bracket for March Madness, I found that there was no easy way to pull the statistics of every team in the tournament. The tools that I 
             found were either expensive or did not have what I was looking for. I created the API to help me compare two teams and to help decide which teams should 
             advance in the tournament. I wrote a web scraper that would pull the data from College Basketball Reference and then I would store the data in a 
             MongoDB database. The API calls from this database of teams and users can find a certain team, sort the teams by a statistic as well as other features to help them make a bracket.`,
-        link: "https://github.com/christian7974/College-Basketball-API",
+        link: "https://github.com/christian7974/college-basketball-api-ts",
     }, 
     {
         title: "This Website",
