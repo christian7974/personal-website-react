@@ -2,6 +2,7 @@ import convexHull from './images/project_images/convex_hull_example.jpg';
 import personalWebsitePhoto from './images/project_images/personal_website_photo.png';
 import apiPhoto from './images/project_images/api_repo_photo.png';
 import arithPhoto from './images/project_images/arith_photo.png';
+import appTrackPhoto from './images/project_images/app_tracker.png';
 
 export const project_list = [
     {
@@ -14,6 +15,17 @@ export const project_list = [
             advance in the tournament. I wrote a web scraper that would pull the data from College Basketball Reference and then I would store the data in a 
             MongoDB database. The API calls from this database of teams and users can find a certain team, sort the teams by a statistic as well as other features to help them make a bracket.`,
         link: "https://github.com/christian7974/college-basketball-api-ts",
+    }, 
+    {
+        title: "Job Application Tracker",
+        image: appTrackPhoto,
+        description: "Web application developed to help people keep track of their job applications using React.js, Next.js with a PostgreSQL database.",
+        extendedDescription: 
+            `When applying jor jobs out of undergrad, I found myself having a hard time recording the jobs that I applied for and would often apply to the same position at the same
+            company multiple times. This would be taking away time from sending more meaningful applications. I created this web application to help keep track of my applications
+            and to help me stay organized. I used React.js and Next.js for the frontend and used Supabase (for authentication and the database) for the backend. While I used this
+            when applying for jobs after college, anyone who is mass applying for jobs can use this tool as well. Use the link below to find the repository and click the link to see the actual application.`,
+        link: "https://github.com/christian7974/simple-job-app",
     }, 
     {
         title: "This Website",
