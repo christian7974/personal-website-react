@@ -2,14 +2,14 @@
 
 const skills = [
     { name: 'Javascript', value: 3 },
+    { name: 'Java', value: 1 },
     { name: 'React', value: 2 },
     { name: 'Node.js', value: 2 },
     { name: 'Python', value: 2 },
     { name: 'HTML/CSS', value: 3 },
-    { name: 'C++', value: 2 },
+    { name: 'C++', value: 1 },
     { name: 'SQL', value: 1 },
     { name: 'Tailwind', value: 2 },
-    { name: 'Rust', value: 1 },
     { name: 'Typescript', value: 2 },
     { name: 'NoSQL', value: 2},
     { name: 'Git/Github', value: 3}
