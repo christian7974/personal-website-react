@@ -66,7 +66,7 @@ export default function ProjectPage() {
         <div className="flex mx-4 space-x-4">
           <motion.div 
             id="project-container" 
-            className="w-1/2 tabphone:w-full tablet:h-120 tablet:overflow-y-scroll phone:h-80 bg-project-scroller h-128 tall:h-[510px] space-y-2 overflow-y-auto rounded-2xl"
+            className="w-1/2 tabphone:w-full tablet:h-120 tablet:overflow-y-scroll phone:h-80 bg-project-scroller h-[32rem] tall:h-[510px] space-y-2 overflow-y-auto rounded-2xl"
             variants={containerVariants}
             initial="hidden"
             animate="show"

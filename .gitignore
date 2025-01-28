@@ -24,3 +24,4 @@ yarn-error.log*
 
 .env
 .useless
+for_me.txt

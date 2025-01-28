@@ -3,7 +3,7 @@ import personalWebsitePhoto from './images/project_images/personal_website_photo
 import apiPhoto from './images/project_images/api_repo_photo.png';
 import arithPhoto from './images/project_images/arith_photo.png';
 import appTrackPhoto from './images/project_images/app_tracker.png';
-
+import dataStructuresPhoto from './images/project_images/data_structures_repo.png'
 export const project_list = [
     {
         title: "College Basketball API",
@@ -26,6 +26,17 @@ export const project_list = [
             and to help me stay organized. I used React.js and Next.js for the frontend and used Supabase (for authentication and the database) for the backend. While I used this
             when applying for jobs after college, anyone who is mass applying for jobs can use this tool as well. Use the link below to find the repository and click the link to see the actual application.`,
         link: "https://github.com/christian7974/simple-job-app",
+    }, 
+    {
+        title: "Data Structures/Algorithms Portfolio",
+        image: dataStructuresPhoto,
+        description: "Repository of well-known data structures and algorithms written in Java.",
+        extendedDescription: 
+            `One language that I always wanted to learn and master was Java, however I never had the opportunity to do so in undergrad. I wanted to learn it since I did not have
+            too much experience with object-oriented programming which is a pillar of computer science and software engineering. I also wanted a way to stay sharp with
+            data strucutres and algorithms, since those are also important for software engineering. This repository is a way for me to practice using Java while also learning
+            and strengthening my skills in data structures.`,
+        link: "https://github.com/christian7974/DataStructures",
     }, 
     {
         title: "This Website",
