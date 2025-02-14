@@ -8,7 +8,7 @@ export default function HomeSubTitle() {
     const description = useRef(null);
     useEffect(() => {
         const typed = new Typed(description.current, {
-        strings: ['Aspiring Software Engineer', 'URI Alum'],
+        strings: ['URI Alum', 'Incoming Grad Student'],
         showCursor: true,
         cursorChar: '_',    
         typeSpeed: 50,

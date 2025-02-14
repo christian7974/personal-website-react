@@ -4,8 +4,8 @@ export const about_me_list = [
     {
         title: "Education",
         description: `I graduated from the University of Rhode Island with a BS in Computer Science, earning summa cum laude honors (3.77 cumulative GPA, 3.81 GPA 
-            within my major). I plan on going back to school for a master's degree in finance, as that has also been an interest of mine and something that I enjoy 
-            learning more about. I want to try to work on project in that space since another goal of mine is to work at a fintech company.`
+            within my major). I will be going back to school for a Master's Degree in Finance at Merrimack College, as finance has also been an interest of mine and something that I enjoy 
+            learning about.`
     },
     {
         title: "Currently Listening To:",
